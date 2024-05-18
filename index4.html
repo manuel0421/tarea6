@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="problema">
+        <main>
+            <h1>PROBLEMA 4</h1>
+            <center><img src="img/caso4.png" alt="caso4"></center>
+            <article>
+                <script>
+
+                    // Declarar variables
+
+                    var practica1, practica2, practica3, practica4, notaEliminada, promedioPracticas;
+
+                     // Leer las notas de las prácticas
+
+                    practica1=(parseInt(prompt("Ingrese la nota de la práctica 1: ")));
+                    practica2=(parseInt(prompt("Ingrese la nota de la práctica 2: ")));
+                    practica3=(parseInt(prompt("Ingrese la nota de la práctica 3: ")));
+                    practica4=(parseInt(prompt("Ingrese la nota de la práctica 4: ")));
+
+                    // Encontrar la nota eliminada
+
+                    if (practica1 <= practica2 && practica1 <= practica3 && practica1 <= practica4) {
+                        notaEliminada = practica1   
+                    } else {if (practica2 <= practica1 && practica2 <= practica3 && practica2 <= practica4) {
+                        notaEliminada = practica2
+                    } else {if (practica3 <= practica1 && practica3 <= practica2 && practica3 <= practica4) {
+                        notaEliminada = practica3   
+                    } else {
+                        notaEliminada = practica4
+                    }
+                        
+                    }
+                        
+                    }
+
+                    // Calcular el promedio de las prácticas
+                    promedioPracticas = (practica1 + practica2 + practica3 + practica4 - notaEliminada) / 3
+
+                    // Mostrar los resultados
+
+                    document.write("La nota eliminada es:   "+ notaEliminada+"<br>")
+                    document.write( "El promedio de prácticas es:  "+ promedioPracticas+"<br>")
+                </script>
+            </article>
+        </main>
+    </div>
+    
+</body>
+</html>

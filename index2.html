@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="problema">
+        <main>
+            <h1>PROBLEMA 2</h1>
+            <center><img src="img/caso2.png" alt="caso2" height="150px"></center>
+            <article>
+                <script>
+                    var def,prod,grado;
+                    def=(parseFloat(prompt("Ingrese el numero de tornillos defectuosos")));
+                    prod=(parseFloat(prompt("Ingrese el numero de tornillos producidos")));
+                    if (def>200 && prod<1000) {
+                        grado=5;
+                    } else {
+                        if (def<200 && prod<1000) {
+                            grado=6;
+                        } else {
+                            if (def>200 && prod>1000) {
+                                grado=7
+                            } else {
+                                if (def<200 && prod>1000) {
+                                    grado=8
+                                } else {
+                                    
+                                }
+                            }
+                        }
+                    }
+                    document.write("El grado de eficiencia del operario es:  "+grado+"<br>")
+                </script>
+            </article>
+        </main>
+    </div>
+    
+</body>
+</html>

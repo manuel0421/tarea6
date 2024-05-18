@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="problema">
+        <main>
+            <h1>PROBLEMA 5</h1>
+            <center><img src="img/caso5.png" alt="caso5" height="200px"></center> 
+            <article>
+                <script>
+                    var edad,anemia,nivel,sexo;
+                    nivel=(parseInt(prompt("Ingresa el nivel de hemoglobina")));
+                    edad=(parseInt(prompt("Ingresa la edad")));
+                    anemia="negativo"
+                    if (edad <= 1  && nivel < 13) {
+                        anemia = "Positivo"
+                    }
+                    if ( edad > 1  && edad <= 6 && nivel < 10) {
+                        anemia = "Positivo"
+                    }
+                    if (edad > 6 && edad <= 12 && nivel < 11 ) {
+                        anemia = "Positivo"
+                    }
+                    if (edad > 60 && edad <= 120 && nivel < 12.6) {
+                        anemia = "Positivo"     
+                    }
+                    if (edad > 120 && edad <= 180 && nivel < 13 ) {
+                        anemia = "Positivo"
+                    }
+                    if (edad > 180) {
+                        
+                    }
+                    sexo=(parseInt(prompt("Ingresa el sexo: 1 = Mujer, 2 = Hombre")));
+                    if (sexo == 1 && sexo == 2) {
+                        if (sexo == 1 ) {
+                            if (nivel < 12) {
+                                anemia = "Positivo"
+                            }
+                        }
+                    } else {
+                        if (nivel < 14) {
+                            anemia = "Positivo"
+                        } else {
+                            document.write("Ingresa un sexo correcto")
+                            anemia = "Indefinido"
+                        }
+                    }
+                    if (anemia = "Positivo") {
+                        document.write("La persona tiene una hemoglobina de " +nivel+"  el resultado es:  "+anemia+"<br>")
+                    } else {
+                        document.write("La persona tiene una hemoglobina de " +nivel+"  el resultado es: "+anemia+"<br>")
+                    }     
+                </script>
+            </article>
+        </main>
+    </div>
+    
+</body>
+</html>

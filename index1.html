@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="problema">
+        <main>
+            <h1>PROBLEMA 1</h1>
+            <center><img src="img/caso1.png" alt="caso1"></center>
+            <article>
+                <script>
+                    var cantidad,unidad,total;
+                    cantidad=(parseInt(prompt("Ingrese el numero de llantas que desea comprar")));
+                    if (cantidad<5) {
+                        unidad=3000
+                    } else {
+                        if (cantidad>=5 && cantidad<11) {
+                            unidad=2500
+                        } else {
+                            unidad=2000
+                        }
+                    }
+                    
+                    total=unidad*cantidad
+                    document.write("El monto a pagar es de:  "+total+"<br>")
+                    document.write("El costopor unidad es de:  "+unidad+"<br>")
+
+
+                </script>
+            </article>
+        </main>
+    </div>
+    
+</body>
+</html>
